@@ -1,5 +1,4 @@
-const createSlice = require('@reduxjs/toolkit').createSlice
-const createAsyncThunk = require('@reduxjs/toolkit').createAsyncThunk
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 const axios = require('axios')
 
 const initialState = {
@@ -37,5 +36,5 @@ const userSlice = createSlice({
     }
 })
 
-module.exports = userSlice.reducer
+export default userSlice.reducer
 module.exports.fetchUsers = fetchUsers
